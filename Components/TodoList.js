@@ -52,7 +52,9 @@ export class TodoList {
     }
     const item = new TodoListItem(todo)
     item.appendTo(this.#listElement)
+    e.currentTarget.reset();
   }
+
 }
 
 class TodoListItem {
